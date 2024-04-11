@@ -425,6 +425,11 @@ static const u8 *ExpandPlaceholder_UnknownStringVar(void)
     return sUnknownStringVar;
 }
 
+static const u8 *ExpandPlaceholder_RegulationCode(void)
+{
+    return gSaveBlock2Ptr->regulationCode;
+}
+
 static const u8 *ExpandPlaceholder_PlayerName(void)
 {
     return gSaveBlock2Ptr->playerName;
@@ -516,6 +521,7 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_MAXIE]        = ExpandPlaceholder_Maxie,
         [PLACEHOLDER_ID_KYOGRE]       = ExpandPlaceholder_Kyogre,
         [PLACEHOLDER_ID_GROUDON]      = ExpandPlaceholder_Groudon,
+        [PLACEHOLDER_ID_REG_CODE]     = ExpandPlaceholder_RegulationCode
     };
 
     if (id >= ARRAY_COUNT(funcs))

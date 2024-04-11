@@ -1574,6 +1574,8 @@ const u8 gEasyChatGroupName_Move2[] = _("MOVE 2");
 const u8 gEasyChatGroupName_TrendySaying[] = _("TRENDY SAYING");
 const u8 gEasyChatGroupName_Pokemon2[] = _("POKéMON2");
 
+const u8 gText_RegulationCode[] = _("REGULATION CODE");
+
 const u8 gText_ThreeQuestionMarks[] = _("???");
 const u8 gText_MaxHP[] = _("MAX. HP");
 const u8 gText_Attack[] = _("ATTACK");

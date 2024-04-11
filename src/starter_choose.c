@@ -23,6 +23,7 @@
 #include "window.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
+#include "regulation_code.h"
 
 #define STARTER_MON_COUNT   3
 
@@ -112,9 +113,9 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_TREECKO,
-    SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
+    SPECIES_LOTAD,
+    SPECIES_LOTAD,
+    SPECIES_LOTAD,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -352,7 +353,7 @@ u16 GetStarterPokemon(u16 chosenStarterId)
 {
     if (chosenStarterId > STARTER_MON_COUNT)
         chosenStarterId = 0;
-    return sStarterMon[chosenStarterId];
+    return Get_RegCode_Species(gSaveBlock2Ptr->regulationCode);
 }
 
 static void VblankCB_StarterChoose(void)

@@ -1,0 +1,1 @@
+u16 Get_RegCode_Species(u8 regCode[REGULATION_CODE_LENGTH]);

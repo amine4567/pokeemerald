@@ -1726,6 +1726,7 @@ static void (*const sDrawTextEntryBoxFuncs[])(void) =
     [NAMING_SCREEN_CAUGHT_MON] = DrawMonTextEntryBox,
     [NAMING_SCREEN_NICKNAME]   = DrawMonTextEntryBox,
     [NAMING_SCREEN_WALDA]      = DrawNormalTextEntryBox,
+    [REGULATION_CODE_SCREEN]   = DrawNormalTextEntryBox
 };
 
 static void DrawTextEntryBox(void)
@@ -2084,6 +2085,17 @@ static void UNUSED Debug_NamingScreenNickname(void)
 //--------------------------------------------------
 
 // Initial pages below are pointless, they're overwritten with KBPAGE_LETTERS_UPPER in MainState_FadeIn()
+static const struct NamingScreenTemplate sRegulationCodeScreenTemplate =
+{
+    .copyExistingString = FALSE,
+    .maxChars = REGULATION_CODE_LENGTH,
+    .iconFunction = 2,
+    .addGenderIcon = FALSE,
+    .initialPage = KBPAGE_LETTERS_UPPER,
+    .unused = 35,
+    .title = gText_RegulationCode,
+};
+
 static const struct NamingScreenTemplate sPlayerNamingScreenTemplate =
 {
     .copyExistingString = FALSE,
@@ -2135,6 +2147,7 @@ static const struct NamingScreenTemplate *const sNamingScreenTemplates[] =
     [NAMING_SCREEN_CAUGHT_MON] = &sMonNamingScreenTemplate,
     [NAMING_SCREEN_NICKNAME]   = &sMonNamingScreenTemplate,
     [NAMING_SCREEN_WALDA]      = &sWaldaWordsScreenTemplate,
+    [REGULATION_CODE_SCREEN]   = &sRegulationCodeScreenTemplate,
 };
 
 static const struct OamData sOam_8x8 =
