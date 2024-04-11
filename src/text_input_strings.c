@@ -20,6 +20,11 @@ const u8 gText_NamingScreenKeyboard_56789[] = _("{CLEAR 11}5{CLEAR 16}6{CLEAR 16
 const u8 gText_NamingScreenKeyboard_Symbols1[] = _("{CLEAR 12}!{CLEAR 17}?{CLEAR 16}♂{CLEAR 16}♀{CLEAR 16}/{CLEAR 17}-");
 const u8 gText_NamingScreenKeyboard_Symbols2[] = _("{CLEAR 11}…{CLEAR 16}“{CLEAR 16}”{CLEAR 18}‘{CLEAR 19}'{CLEAR 18} ");
 
+// Hex keyboard
+const u8 gText_NamingScreenKeyboard_Hex_012345[] = _("{CLEAR 11}0{CLEAR 16}1{CLEAR 16}2{CLEAR 16}3{CLEAR 16}4{CLEAR 16}5");
+const u8 gText_NamingScreenKeyboard_Hex_6789AB[] = _("{CLEAR 11}6{CLEAR 16}7{CLEAR 16}8{CLEAR 16}9{CLEAR 16}A{CLEAR 16}B");
+const u8 gText_NamingScreenKeyboard_Hex_CDEF[] = _("{CLEAR 11}C{CLEAR 16}D{CLEAR 16}E{CLEAR 16}F");
+
 // Union Room Chat keyboard
 const u8 gText_UnionRoomChatKeyboard_ABCDE[] = _("ABCDE");
 const u8 gText_UnionRoomChatKeyboard_FGHIJ[] = _("FGHIJ");
